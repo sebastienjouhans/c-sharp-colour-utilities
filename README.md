@@ -2,14 +2,16 @@ c-sharp-colour-utilities
 ========================
 
 This is set of classes that help with colour manipulation. 
- - A harmony colour helper for a giving colour
- - Match the closest colour to one contained into a list of colours.
+
+ - Finds the closest colour to one contained into a list of colours. It can also give out the name of the colour.
+ - A harmony colour helper to find complementary colours.
+ 
 
 WPF colour utils
-
+================
 Colour class
-It provides the ability to convert a colour from RGBto HSL or from HSLto RGBColours can be create from a System.Drawing.Color or RGB values or HSL values.
-A Colour can be compared with another colour by using == or != or with the method getIsColourMatch.
+It provides the ability to convert a colour from RGB to HSL or from HSLto RGBColours can be create from a System.Drawing.Color or RGB values or HSL values.
+A Colour can be compared with another colour by using == or != or with the method getIsColourMatch. 
 
 ColourHarmoniesHelper class
 It provides the ability to get different colour harmonies which are highlighted in this website (http://www.easyrgb.com/index.php?X=WEEL).
