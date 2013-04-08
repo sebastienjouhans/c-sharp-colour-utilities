@@ -186,7 +186,7 @@ namespace Kinrou.Drawing
 
         public static Colour hexToColour(string hex)
         {
-            if (hex.Length != 6) throw new NullReferenceException("the hexadecimal value must have a length of 6 characters");
+            if (hex.Length != 6) throw new ArgumentException("the hexadecimal value must have a length of 6 characters");
 
             byte r = 255;
             byte g = 255;
