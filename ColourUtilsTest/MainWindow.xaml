@@ -1,0 +1,42 @@
+﻿<Window x:Class="ColourUtilsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="518.657" Width="525">
+    <Grid>
+
+        <TextBox Background="WhiteSmoke" GotFocus="hexColourText_GotFocus_1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="type hex colour" VerticalAlignment="Top" Width="120" x:Name="hexColourText"/>
+        <Button Content="get closest col" HorizontalAlignment="Left" Margin="405,8,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click_1" Height="22"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="305,8,0,0" VerticalAlignment="Top" Width="95" x:Name="hexColour" Background="White" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,74,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="hexColourMatch" />
+        <Label Content="Colour Name Match" HorizontalAlignment="Left" Margin="305,74,0,0" VerticalAlignment="Top" Width="158" x:Name="colourNameMatch" Height="26"/>
+        <Label Content="RGB Value" HorizontalAlignment="Left" Margin="135,6,0,0" VerticalAlignment="Top" Width="143" x:Name="colourRgbText" Height="26"/>
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="120,70,0,0" VerticalAlignment="Top" Width="158" x:Name="colourRgbMatchText" Height="26"/>
+        <Label Content="COLOUR MATCH" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="158" x:Name="colourNameMatch_Copy" Height="26" FontWeight="Bold"/>
+        <Label Content="SPLIT COMPLEMENTARY COLOUR" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="239" x:Name="colourNameMatch_Copy1" Height="26" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,141,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="complementaryCol1" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="154,141,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="complementaryCol2" />
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="120" x:Name="complementaryColRGB1" Height="26"/>
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="154,163,0,0" VerticalAlignment="Top" Width="120" x:Name="complementaryColRGB2" Height="26"/>
+        <Label Content="Triadic COMPLEMENTARY COLOUR" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="239" x:Name="colourNameMatch_Copy2" Height="26" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,228,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="TriadicCol1" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="154,228,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="TriadicCol2" />
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="120" x:Name="TriadicColRGB1" Height="26"/>
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="154,250,0,0" VerticalAlignment="Top" Width="120" x:Name="TriadicColRGB2" Height="26"/>
+        <Label Content="Analogous COMPLEMENTARY COLOUR" HorizontalAlignment="Left" Margin="10,286,0,0" VerticalAlignment="Top" Width="239" x:Name="colourNameMatch_Copy3" Height="26" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,317,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="AnalogousCol1" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="154,317,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="AnalogousCol2" />
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="120" x:Name="AnalogousColRGB1" Height="26"/>
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="154,339,0,0" VerticalAlignment="Top" Width="120" x:Name="AnalogousColRGB2" Height="26"/>
+        <Label Content="Monochromatic COLOUR" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="239" x:Name="colourNameMatch_Copy4" Height="26" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="10,405,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="MonochromaticCol1" />
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="154,405,0,0" VerticalAlignment="Top" Width="95" Background="White" x:Name="MonochromaticCol2" />
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Width="120" x:Name="MonochromaticColRGB1" Height="26"/>
+        <Label Content="RGB Match Value" HorizontalAlignment="Left" Margin="154,427,0,0" VerticalAlignment="Top" Width="120" x:Name="MonochromaticColRGB2" Height="26"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,30,0,0" VerticalAlignment="Top" Width="497"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,91,0,0" VerticalAlignment="Top" Width="497"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,178,0,0" VerticalAlignment="Top" Width="497"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,273,0,0" VerticalAlignment="Top" Width="497"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,355,0,0" VerticalAlignment="Top" Width="497"/>
+
+    </Grid>
+</Window>
