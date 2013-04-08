@@ -42,6 +42,18 @@ namespace Kinrou.Drawing
             Name = colour.Name;
             Hsl = colour.Hsl;
         }
+
+
+        public Colour(string hex)
+        {
+            Colour colour = Colour.hexToColour(hex); ;
+            A = colour.A;
+            R = colour.R;
+            G = colour.G;
+            B = colour.B;
+            Name = colour.Name;
+            Hsl = colour.Hsl;
+        }
         #endregion
 
         #region implicit operators
@@ -172,8 +184,10 @@ namespace Kinrou.Drawing
         }
         
 
-        public static Colour hexToRgb(string hex)
+        public static Colour hexToColour(string hex)
         {
+            if (hex.Length != 6) throw new NullReferenceException("the hexadecimal value must have a length of 6 characters");
+
             byte r = 255;
             byte g = 255;
             byte b = 255;
